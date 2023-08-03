@@ -1,1 +1,0 @@
-import{_ as o,o as r,c as t,a as e,b as a}from"./app-3a48918c.js";const c={},d=e("h1",{id:"my-world",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#my-world","aria-hidden":"true"},"#"),a(" My World")],-1),s=[d];function n(_,l){return r(),t("div",null,s)}const h=o(c,[["render",n],["__file","world.html.vue"]]);export{h as default};
