@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-2d0a870d","path":"/en/","title":"Home","lang":"en-US","frontmatter":{"lang":"en-US","title":"Home","description":"ARuanLY Blog","sidebar":false},"headers":[],"git":{},"filePathRelative":"en/README.md"}');export{e as data};
