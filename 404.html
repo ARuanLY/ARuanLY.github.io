@@ -1,33 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="VuePress 2.0.0-beta.66">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
     <style>
       :root {
-        --c-bg: #fff;
+        --vp-c-bg: #fff;
       }
-      html.dark {
-        --c-bg: #22272e;
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
       }
-      html, body {
-        background-color: var(--c-bg);
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
       }
     </style>
     <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme');
-			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
-				document.documentElement.classList.toggle('dark', true);
-			}
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
     </script>
     <link rel="icon" href="/images/favicon.ico"><meta name="referrer" content="no-referrer"><title>ARuanLY个人博客</title><meta name="description" content="这是ARuanLY的第一个 VuePress 站点">
-    <link rel="preload" href="/assets/style-8a38cc2d.css" as="style"><link rel="stylesheet" href="/assets/style-8a38cc2d.css">
-    <link rel="modulepreload" href="/assets/app-95a90fc2.js"><link rel="modulepreload" href="/assets/404.html-11df1607.js"><link rel="modulepreload" href="/assets/404.html-f9875e7b.js"><link rel="prefetch" href="/assets/index.html-a18dcac2.js" as="script"><link rel="prefetch" href="/assets/index.html-e3bb0a5d.js" as="script"><link rel="prefetch" href="/assets/index.html-4ffea1b3.js" as="script"><link rel="prefetch" href="/assets/程序员鱼皮前端学习路线.html-67c8c21b.js" as="script"><link rel="prefetch" href="/assets/带你读懂Ajax.html-ab39354e.js" as="script"><link rel="prefetch" href="/assets/props属性警告.html-cb295214.js" as="script"><link rel="prefetch" href="/assets/带你理解Object和Function的关系和原型链.html-a4b51d7a.js" as="script"><link rel="prefetch" href="/assets/带你读懂Ajax.html-c6048231.js" as="script"><link rel="prefetch" href="/assets/带你理解Object和Function的关系和原型链.html-d24b83aa.js" as="script"><link rel="prefetch" href="/assets/props属性警告.html-c741ccac.js" as="script"><link rel="prefetch" href="/assets/index.html-04d84454.js" as="script"><link rel="prefetch" href="/assets/index.html-daabbcbc.js" as="script"><link rel="prefetch" href="/assets/index.html-17abaec5.js" as="script"><link rel="prefetch" href="/assets/程序员鱼皮前端学习路线.html-105acd6d.js" as="script"><link rel="prefetch" href="/assets/带你读懂Ajax.html-356c5baf.js" as="script"><link rel="prefetch" href="/assets/props属性警告.html-addcbbc1.js" as="script"><link rel="prefetch" href="/assets/带你理解Object和Function的关系和原型链.html-9fe14123.js" as="script"><link rel="prefetch" href="/assets/带你读懂Ajax.html-1093a834.js" as="script"><link rel="prefetch" href="/assets/带你理解Object和Function的关系和原型链.html-ac4ab125.js" as="script"><link rel="prefetch" href="/assets/props属性警告.html-da80c7fd.js" as="script">
+    <link rel="preload" href="/assets/style-mv7nI54H.css" as="style"><link rel="stylesheet" href="/assets/style-mv7nI54H.css">
+    <link rel="modulepreload" href="/assets/app-CU3PtqxC.js"><link rel="modulepreload" href="/assets/404.html-lYX6kS3b.js">
+    <link rel="prefetch" href="/assets/index.html-aAt-nk3D.js" as="script"><link rel="prefetch" href="/assets/index.html-2atDD6v-.js" as="script"><link rel="prefetch" href="/assets/程序员鱼皮前端学习路线.html-nICqeWwz.js" as="script"><link rel="prefetch" href="/assets/index.html-Cum4yC_U.js" as="script"><link rel="prefetch" href="/assets/index.html-Ctd2YP5Y.js" as="script"><link rel="prefetch" href="/assets/带你读懂Ajax.html-BFmErdzb.js" as="script"><link rel="prefetch" href="/assets/带你理解Object和Function的关系和原型链.html-CSm-uB1g.js" as="script"><link rel="prefetch" href="/assets/props属性警告.html-CfghuyQ3.js" as="script"><link rel="prefetch" href="/assets/index.html-B1LGIVtC.js" as="script"><link rel="prefetch" href="/assets/程序员鱼皮前端学习路线.html-D5Bbun9r.js" as="script"><link rel="prefetch" href="/assets/带你读懂Ajax.html-BPm7b1A3.js" as="script"><link rel="prefetch" href="/assets/带你理解Object和Function的关系和原型链.html-A_izg89C.js" as="script"><link rel="prefetch" href="/assets/props属性警告.html-FpypVo8F.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>That&#39;s a Four-Oh-Four.</blockquote><a href="/" class="">Take me home</a></div></main></div><!----><!--]--></div>
-    <script type="module" src="/assets/app-95a90fc2.js" defer></script>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-53ea4760><main class="page" data-v-53ea4760><div vp-content data-v-53ea4760><h1 data-v-53ea4760>404</h1><blockquote data-v-53ea4760>That&#39;s a Four-Oh-Four.</blockquote><a class="route-link" href="/" data-v-53ea4760>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-CU3PtqxC.js" defer></script>
   </body>
 </html>
